@@ -1,0 +1,21 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables';
+
+/****************************
+generic classes */
+
+
+
+
+/*****************************
+header */
+
+#header{
+    height: 100px;
+
+    .logo{
+        height:50px;
+        margin-top:25px
+    }
+}
+

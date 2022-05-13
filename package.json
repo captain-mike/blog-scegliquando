@@ -1,14 +1,15 @@
 {
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "node-sass": "^7.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "name": "scegliquando",
   "description": "=== scegliquando ===",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "compile:sass": "node-sass sass/style.scss css/style.css"
+    "compile:sass": "node-sass sass/style.scss css/style.css --output-style compress  -w"
   },
   "repository": {
     "type": "git",
