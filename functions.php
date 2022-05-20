@@ -32,8 +32,10 @@ function scegliquando_notice_dismissed(){
 add_action('wp_enqueue_scripts', 'scegliquando_enqueue');
 function scegliquando_enqueue(){
     wp_enqueue_style('scegliquando-style', get_stylesheet_uri());
-    wp_enqueue_style('scegliquando-style-main', get_template_directory_uri().'/css/style.css');
+    wp_enqueue_style('scegliquando-style-main', get_template_directory_uri().'/css/style.css','',rand(0,9999));
     wp_enqueue_script('jquery');
+    wp_enqueue_script('slick',get_template_directory_uri().'/node_modules/slick-carousel/slick/slick.min.js',array('jquery'));
+    wp_enqueue_script('sliders',get_template_directory_uri().'/js/sliders.js',array('slick'));
 }
 
 add_action('wp_footer', 'scegliquando_footer');
@@ -177,3 +179,5 @@ function scegliquando_comment_count($count){
         return $count;
     }
 }
+
+include('inc/cpt.php');

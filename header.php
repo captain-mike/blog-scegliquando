@@ -8,17 +8,20 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div id="page_bg"></div>
     <?php wp_body_open(); ?>
     <div id="wrapper" class="hfeed">
         <header id="header" role="banner" class="bg-primary">
             <div class="container">
+                <div class="row">
 
-                <div id="branding">
-                    <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                        <img lazy="true" class="logo" src="http://scegli.test/assets/img/scegli-quando-logo-check.png">
+                    
+                    <div id="branding" class="col-4">
+                        <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <img lazy="true" class="logo" src="http://scegli.test/assets/img/scegli-quando-logo-check.png">
+                        </div>
                     </div>
-                </div>
-                <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <nav class="col-lg-8" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <?php wp_nav_menu([
                             'theme_location' => 'main-menu', 
                             'link_before' => '<span itemprop="name">', 
@@ -26,5 +29,6 @@
                         ]); ?>
                 </nav>
             </div>
+            </div>
         </header>
-        <div class="container">
+        <div class="main">
