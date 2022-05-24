@@ -43,19 +43,23 @@
         <div class="row">
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="col-12 col-md-6 col-lg-4 post-item">
+            <article class="col-12 col-md-6 col-lg-4 post-item mb-4">
+                <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
 
-                <div class="post-image">
-                    <?php the_post_thumbnail();?>
-                </div>
-                <div class="post-preview">
-                    <h4><?php the_title() ?></h4>
-                    <div><?php the_date() ?></div>
-                    <div><?php the_excerpt() ?></div>
-                </div>
-                
-                
-            </div>
+                    
+                    <div class="post-image">
+                        <?php the_post_thumbnail();?>
+                    </div>
+                    <div class="post-preview">
+                        <?php if (!empty(get_field('professioni'))):?>
+                            <span>Professione : <b><?=get_field('professioni')[0]->post_name ?></b></span>
+                        <?php endif; ?>
+                        <h4><?php the_title() ?></h4>
+                        <div><?php the_date() ?></div>
+                        <div><?php the_excerpt() ?></div>
+                    </div>
+                </a>
+            </article>
             <?php endwhile;
         endif; ?>
         </div>

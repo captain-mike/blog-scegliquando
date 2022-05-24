@@ -9,7 +9,7 @@ register_post_type( 'professione',
         ),
         'public' => true,
         'has_archive' => true,
-        'rewrite' => array('slug' => 'professioni'),
+        'rewrite' => array('slug' => 'profession'),
         'show_in_rest' => true,
         'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields' ),
     )

@@ -10,7 +10,6 @@
 <body <?php body_class(); ?>>
     <div id="page_bg"></div>
     <?php wp_body_open(); ?>
-    <div id="wrapper" class="hfeed">
         <header id="header" role="banner" class="bg-primary">
             <div class="container">
                 <div class="row">

@@ -3,6 +3,7 @@ jQuery(($)=>{
     
     $('.post-slider').slick({
         dots: false,
+        arrows: false,
         infinite: true,
         speed: 300,
         autoplay: true,

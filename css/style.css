@@ -8115,6 +8115,63 @@ posts */
   height: 300px; }
 
 /*****************************
+professions */
+/*category list page*/
+.cat-list {
+  margin-top: -20px;
+  padding: 0 13px; }
+  .cat-list .letter-li {
+    color: #777;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 0;
+    width: 100%;
+    display: inline-block; }
+    .cat-list .letter-li .letter {
+      vertical-align: text-top;
+      width: 12%;
+      display: inline-block;
+      font-size: 54px;
+      vertical-align: top; }
+    .cat-list .letter-li .cat-li-wrap {
+      display: inline-block;
+      width: 85%;
+      vertical-align: top; }
+    .cat-list .letter-li .cat-li {
+      height: 70px;
+      margin-bottom: 10px;
+      display: flex; }
+      .cat-list .letter-li .cat-li .img-wrap {
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        width: 80px;
+        text-align: center; }
+      .cat-list .letter-li .cat-li img {
+        height: 100%; }
+    .cat-list .letter-li .cat-li-name {
+      display: flex;
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 20px;
+      padding-left: 10px;
+      height: 100%;
+      width: calc(100% - 85px);
+      line-height: 95px;
+      position: relative;
+      align-items: center; }
+  .cat-list .cat-li-profession {
+    height: 80px;
+    padding: 5px 0; }
+  .cat-list .profession-name-wrap {
+    position: absolute;
+    line-height: 18px;
+    /* height: 100%; */
+    width: 100%;
+    text-overflow: ellipsis; }
+  .cat-list .profession-child.letter-li {
+    border-bottom: none; }
+
+/*****************************
 slider */
 .post-slide {
   height: 500px;
@@ -8136,3 +8193,8 @@ slider */
   .post-slide h4, .post-slide .h4 {
     position: relative;
     font-size: 1.5rem; }
+
+/*****************************
+slider */
+#footer h5, #footer .h5, #footer p {
+  color: #fff; }

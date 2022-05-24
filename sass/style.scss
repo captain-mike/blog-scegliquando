@@ -80,6 +80,11 @@ posts */
 }
 
 /*****************************
+professions */
+
+@import 'professions';
+
+/*****************************
 slider */
 .post-slide{
     height: 500px;
@@ -105,4 +110,17 @@ slider */
         position: relative;
         font-size:1.5rem
     }
+} 
+
+/*****************************
+slider */
+
+#footer{
+
+    h5, p{
+        color: #fff;
+    }
+
 }
+
+
