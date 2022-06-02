@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <main id="content" role="main">
     <div class="container my-5">
+        <div class="bg-grey">
+            Ti trovi qui: <?php show_breadcrumbs() ?>
+        </div>
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

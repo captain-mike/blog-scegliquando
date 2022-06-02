@@ -4,9 +4,7 @@ get_header();
 ?>
 <div class="container my-5">
 <?php
-if ( function_exists('yoast_breadcrumb') ) {
-  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-}
+show_breadcrumbs()
 ?>
 
     <h1 class="mb-5">Tutte le professioni</h1>

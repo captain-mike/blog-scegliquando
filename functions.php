@@ -180,4 +180,10 @@ function scegliquando_comment_count($count){
     }
 }
 
+function show_breadcrumbs(){
+    if ( function_exists('yoast_breadcrumb') ) {
+    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+    }
+}
+
 include('inc/cpt.php');
