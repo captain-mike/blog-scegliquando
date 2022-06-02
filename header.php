@@ -16,9 +16,9 @@
 
                     
                     <div id="branding" class="col-4">
-                        <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                        <a href="/" id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                             <img lazy="true" class="logo" src="http://scegli.test/assets/img/scegli-quando-logo-check.png">
-                        </div>
+                        </a>
                     </div>
                     <nav class="col-lg-8" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <?php wp_nav_menu([
